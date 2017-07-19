@@ -6,14 +6,14 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /* =======authentication=========*/
-
-$route['register'] = 'authentication/registration';
-$route['new_student'] = 'authentication/new_student_registration';
-$route['student'] = 'authentication/student_login_process';
-$route['home'] = 'authentication/home';
-$route['admin'] = 'authentication/admin';
-$route['homepage'] = 'authentication/homepage';
-$route['init']='authentication/init';
+$route['auth'] = 'auth/index';
+//$route['register'] = 'authentication/registration';
+//$route['new_student'] = 'authentication/new_student_registration';
+//$route['student'] = 'authentication/student_login_process';
+//$route['home'] = 'authentication/home';
+//$route['admin'] = 'authentication/admin';
+//$route['homepage'] = 'authentication/homepage';
+//$route['init']='authentication/init';
 
 /*===============INIT================*/
 
@@ -44,7 +44,6 @@ $route['start_btn'] = 'dashboard/topic_content';
 
 /*================admin========================*/
 
-$route['admin_dashboard'] = 'admin/dashboard_home';
 $route['o_level_topics'] = 'admin/o_level_topics';
 $route['a_level_topics'] = 'admin/a_level_topics';
 $route['tips'] = 'admin/educational_tips';
@@ -57,5 +56,8 @@ $route['level/(:any)'] = 'topics/add_topic_form/$1';
 $route['pp_level/(:any)'] = 'past_papers/add_pp_form/$1';
 $route['qn_level/(:any)'] = 'questions/add_qn_form/$1';
 $route['edu_tips/(:any)'] = 'education_tips/add_tips/$1';
+
+/*=======================================================*/
+
 
 
